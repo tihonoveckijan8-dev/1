@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Кружок программирования «КодЭко» — ЭкоЦентр «Росток»</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:wght@600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="logo" id="logoLink">
+                <div class="logo-icon"><span class="material-symbols-outlined">eco</span></div>
+                <div class="logo-text">КодЭко<span>ЭкоЦентр «Росток»</span></div>
+            </a>
+            <ul class="nav-tabs desktop-nav" id="desktopNav">
+                <li><button class="nav-tab active" data-tab="home"><span class="material-symbols-outlined">home</span> Главная</button></li>
+                <li><button class="nav-tab" data-tab="history"><span class="material-symbols-outlined">history</span> История</button></li>
+                <li><button class="nav-tab" data-tab="teacher"><span class="material-symbols-outlined">person</span> Преподаватель</button></li>
+                <li><button class="nav-tab" data-tab="gallery"><span class="material-symbols-outlined">collections</span> Фотогалерея</button></li>
+                <li><button class="nav-tab" data-tab="works"><span class="material-symbols-outlined">star</span> Наши работы</button></li>
+                <li><button class="nav-tab" data-tab="program"><span class="material-symbols-outlined">menu_book</span> Что изучаем</button></li>
+                <li><button class="nav-tab" data-tab="directions"><span class="material-symbols-outlined">directions</span> Как добраться</button></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><span class="material-symbols-outlined">menu</span></button>
+        </div>
+    </header>
+
+    <div class="mobile-overlay" id="mobileOverlay">
+        <div class="mobile-menu-container" id="mobileMenuContainer"></div>
+    </div>
+
+    <main class="main" id="mainContent">
+        <!-- Главная -->
+        <div class="tab-content active" id="tab-home">
+            <div class="section-hero">
+                <div>
+                    <span class="hero-badge"><span class="material-symbols-outlined">park</span> Экологический центр «Росток»</span>
+                    <h1 class="hero-title">Кружок <span class="accent">программирования</span> для юных исследователей</h1>
+                    <p class="hero-subtitle">Мы учим детей от 8 до 16 лет создавать технологии будущего, вдохновляясь природой. Python, веб-разработка, робототехника и цифровая экология — всё в одном месте.</p>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-blob"></div>
+                    <div class="hero-card">
+                        <div class="code-block">
+                            <span class="keyword">def</span> <span class="func">посади_дерево</span>(<span class="string">название</span>):<br>
+                            &nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">f"🌳 {название} растёт!"</span>)<br>
+                            <span class="keyword">for</span> i <span class="keyword">in</span> <span class="string">range</span>(<span class="string">3</span>):<br>
+                            &nbsp;&nbsp;посади_дерево(<span class="string">"Дуб"</span>)
+                        </div>
+                        <p style="text-align:center; margin-top:1rem; font-size:0.8rem; color:var(--text-muted);">Пример кода, который пишут наши ребята</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-grid">
+                <div class="card"><span class="material-symbols-outlined card-icon">code_blocks</span><h3>Реальное программирование</h3><p>Python, HTML/CSS, JavaScript, Scratch — от основ до создания собственных проектов и игр.</p></div>
+                <div class="card"><span class="material-symbols-outlined card-icon">nature_people</span><h3>Эко-уклон</h3><p>Все проекты связаны с экологией: мониторинг воздуха, симуляции экосистем, умные теплицы.</p></div>
+                <div class="card"><span class="material-symbols-outlined card-icon">diversity_3</span><h3>Команда и поддержка</h3><p>Занятия в малых группах до 10 человек. Каждый ребёнок получает внимание.</p></div>
+            </div>
+        </div>
+
+        <!-- История -->
+        <div class="tab-content" id="tab-history">
+            <h2><span class="material-symbols-outlined">history</span> История кружка</h2>
+            <div class="timeline">
+                <div class="timeline-item"><div class="timeline-year"><span class="material-symbols-outlined">calendar_today</span> 2019</div><p><strong>Основание.</strong> Кружок открылся при экологическом центре «Росток» с тремя энтузиастами и пятью учениками.</p></div>
+                <div class="timeline-item"><div class="timeline-year"><span class="material-symbols-outlined">calendar_today</span> 2020</div><p><strong>Первый онлайн-проект.</strong> Сайт-определитель растений региона, гибридный формат обучения.</p></div>
+                <div class="timeline-item"><div class="timeline-year"><span class="material-symbols-outlined">calendar_today</span> 2021</div><p><strong>Робототехника.</strong> Arduino-проекты: автополив, датчики влажности.</p></div>
+                <div class="timeline-item"><div class="timeline-year"><span class="material-symbols-outlined">calendar_today</span> 2022</div><p><strong>Хакатон.</strong> 1-е место в городском конкурсе «Зелёный код».</p></div>
+                <div class="timeline-item"><div class="timeline-year"><span class="material-symbols-outlined">calendar_today</span> 2024</div><p><strong>Сегодня.</strong> 50+ учеников, три преподавателя, партнёрства с IT-компаниями.</p></div>
+            </div>
+        </div>
+
+        <!-- Преподаватель -->
+        <div class="tab-content" id="tab-teacher">
+            <h2><span class="material-symbols-outlined">person</span> Преподаватель</h2>
+            <div class="teacher-profile">
+                <div class="teacher-avatar">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='100' fill='%23E8F5E1'/%3E%3Ccircle cx='100' cy='75' r='35' fill='%23A5D6A7'/%3E%3Ccircle cx='100' cy='75' r='28' fill='%23C8E6C9'/%3E%3Cellipse cx='100' cy='180' rx='60' ry='45' fill='%2381C784'/%3E%3Crect x='70' y='110' width='60' height='70' rx='20' fill='%2381C784'/%3E%3Ccircle cx='85' cy='68' r='4' fill='%232E7D32'/%3E%3Ccircle cx='115' cy='68' r='4' fill='%232E7D32'/%3E%3Cpath d='M90 85 Q100 95 110 85' stroke='%232E7D32' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Crect x='80' y='120' width='40' height='50' rx='15' fill='%23A5D6A7'/%3E%3C/svg%3E" alt="Алексей Дмитриевич">
+                </div>
+                <div class="teacher-info">
+                    <h2>Алексей Дмитриевич Светлов <span class="material-symbols-outlined" style="color:#f4b400;">verified</span></h2>
+                    <div class="badge-row">
+                        <span class="badge"><span class="material-symbols-outlined">code</span> 12 лет в IT</span>
+                        <span class="badge"><span class="material-symbols-outlined">school</span> МГУ, ВМК</span>
+                        <span class="badge"><span class="material-symbols-outlined">eco</span> Эко-активист</span>
+                    </div>
+                    <p>Бывший ведущий разработчик, решивший посвятить себя обучению детей. Автор методики «Код как экосистема», объединяющей программирование и бережное отношение к природе.</p>
+                    <div class="teacher-contacts">
+                        <span><span class="material-symbols-outlined">mail</span> a.svetlov@eco-code.ru</span>
+                        <span><span class="material-symbols-outlined">call</span> +7 (999) 123-45-67</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Фотогалерея (слайдер) -->
+        <div class="tab-content" id="tab-gallery">
+            <h2><span class="material-symbols-outlined">collections</span> Фотогалерея</h2>
+            <p style="color:var(--text-muted);">Листайте фото наших занятий →</p>
+            <div class="slider-container">
+                <div class="slider" id="slider">
+                    <div class="slide active"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=500&fit=crop" alt="Программирование"><div class="slide-caption">Занятие по Python</div></div>
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&h=500&fit=crop" alt="Робототехника"><div class="slide-caption">Сборка роботов на Arduino</div></div>
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&h=500&fit=crop" alt="Эко-акция"><div class="slide-caption">Эко-акция и хакатон</div></div>
+                    <div class="slide"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=500&fit=crop" alt="Дети за компьютерами"><div class="slide-caption">Урок веб-дизайна</div></div>
+                </div>
+                <button class="slider-btn prev" id="prevSlide"><span class="material-symbols-outlined">chevron_left</span></button>
+                <button class="slider-btn next" id="nextSlide"><span class="material-symbols-outlined">chevron_right</span></button>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+
+        <!-- Наши работы -->
+        <div class="tab-content" id="tab-works">
+            <h2><span class="material-symbols-outlined">star</span> Наши работы</h2>
+            <div class="works-list">
+                <div class="work-card"><div class="work-title"><span class="material-symbols-outlined">device_thermostat</span> Эко-Монитор</div><p>Веб-приложение для отслеживания качества воздуха.</p><div class="work-meta"><span>👤 Дима К., 14 лет</span><span>🛠️ Python, Flask</span></div></div>
+                <div class="work-card"><div class="work-title"><span class="material-symbols-outlined">local_florist</span> Цифровой гербарий</div><p>Сайт-каталог растений с фотографиями и картой.</p><div class="work-meta"><span>👤 Аня С., 13 лет</span><span>🛠️ HTML, CSS, JS</span></div></div>
+                <div class="work-card"><div class="work-title"><span class="material-symbols-outlined">recycling</span> Сортировщик-бот</div><p>Telegram-бот для распознавания мусора по фото.</p><div class="work-meta"><span>👤 Команда 4 чел.</span><span>🛠️ Python, AI</span></div></div>
+            </div>
+        </div>
+
+        <!-- Программа -->
+        <div class="tab-content" id="tab-program">
+            <h2><span class="material-symbols-outlined">menu_book</span> Что изучают ребята</h2>
+            <div class="program-timeline">
+                <div class="program-item"><div class="program-num">01</div><div><strong>Основы алгоритмов</strong> — Scratch, блочное программирование, первые игры.</div></div>
+                <div class="program-item"><div class="program-num">02</div><div><strong>Python с нуля</strong> — переменные, циклы, функции, консольные проекты.</div></div>
+                <div class="program-item"><div class="program-num">03</div><div><strong>Веб-разработка</strong> — HTML, CSS, JavaScript, экологические сайты.</div></div>
+                <div class="program-item"><div class="program-num">04</div><div><strong>Робототехника и IoT</strong> — Arduino, датчики, умная теплица.</div></div>
+                <div class="program-item"><div class="program-num">05</div><div><strong>Проектная работа</strong> — хакатоны, защита собственных идей.</div></div>
+            </div>
+        </div>
+
+        <!-- Как добраться (фиксированный адрес: Минск, ул. Макаёнка, 8) -->
+        <div class="tab-content" id="tab-directions">
+            <h2><span class="material-symbols-outlined">directions</span> Как к нам добраться</h2>
+            <p style="color:var(--text-muted);">ЭкоЦентр «Росток» находится по адресу: <strong>Минск, ул. Макаёнка, 8</strong>.</p>
+            <div class="directions-wrapper">
+                <div class="map-container">
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=27.5706,53.9249&z=17&pt=27.5706,53.9249&whatshere%5Bpoint%5D=27.5706,53.9249&whatshere%5Bzoom%5D=17" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+                <div class="route-builder">
+                    <h3>Проложить маршрут</h3>
+                    <p>Введите вашу точку отправления (город, улица, дом):</p>
+                    <div class="route-input-group">
+                        <input type="text" id="startPoint" placeholder="Например: Минск, пр. Независимости, 1" class="route-input">
+                        <button id="buildRouteBtn" class="btn btn-primary">Построить маршрут</button>
+                    </div>
+                    <small>Откроется Яндекс.Карты с маршрутом до <strong>ул. Макаёнка, 8</strong>.</small>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span class="material-symbols-outlined">copyright</span> 2024 Кружок программирования «КодЭко» при ЭкоЦентре «Росток». Сделано с 💚 и чистым кодом.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
